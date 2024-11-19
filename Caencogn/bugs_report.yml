@@ -1,0 +1,55 @@
+name: BUG REPORT
+description: Please create a report to assist us in reproducing and fixing the bug
+
+body:
+- type: markdown
+  attributes:
+    value: >
+      #### Prior to submitting a bug report, kindly conduct a search of [the existing and past issues] to verify that the issue has not been previously documented and resolved
+()
+- type: text area
+  attributes:
+    label: Describe the bug(s)
+    description:
+      Please provide a succinct definition of the bug.
+
+      To help us efficiently debug the error, please provide a minimal code example that can be directly copied and pasted to reproduce the issue. This example should be as concise as possible, excluding any unnecessary code. Please ensure that the snippet includes all relevant imports and avoids relying on external data. We should be able to run your code and observe the same error you encountered. For example:
+
+      ```
+      CMD
+      **original code:
+      # @echo off
+      # set "var="
+      # set "other=content"
+      # echo First char of var is "%var:~0,1%"
+      # echo My other var=%other%.
+      **your environment variables:
+      # OS windows NT
+      # python vision 3.11.4
+      # cuda vision 11.3.15
+      # other envi
+
+      ```
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+      Please also paste or describe the actual results you observe instead of the expected results. If you observe an error, please paste the error message including the full traceback of the exception. You may want to wrap error messages to make them easier to read in ```  ``` triple backticks.
+      ```
+      python
+      ```
+
+      ```
+      Code snippet
+      ```
+
+      **notes
+
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: />
+
+
+      Thank you for your contribution.
